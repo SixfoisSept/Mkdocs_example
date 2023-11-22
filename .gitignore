@@ -4,3 +4,4 @@ AyEnv/
 *.egg
 mkdocs_env/
 *.egg-info
+.vscode
