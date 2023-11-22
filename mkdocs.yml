@@ -18,10 +18,11 @@ plugins:
           docstring_style: sphinx
 # Setup the navbar
 nav:
-  - Home: index.md
-  - My package: api.md
-  - Graphs & Tables: others.md
-  - About Us: about.md
+- Home: index.md
+- My package: api.md
+- Graphs & Tables: others.md
+- About Us: about.md
+
 exclude_docs: |
   .*
 theme:
