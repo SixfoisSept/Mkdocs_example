@@ -23,7 +23,7 @@ We built the SixFoisSept project by writing Data For Good into our DNA. We carry
 
 SixFoisSept is a signatory of the “Hippocratic Oath for DataScience” charter.
 
-## The product documentation
+## Documentation
 
 If you want to get detailed information about 'My Package,' you can check the [My Package](api.md) section.
 

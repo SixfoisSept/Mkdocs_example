@@ -6,6 +6,14 @@ mkdocs_env/
 *.egg-info
 .vscode
 settings.json
-tests/__pycache__/test_math.cpython-311.pyc
 /site/
+
+src/__pycache__/__init__.cpython-38.pyc
+src/__pycache__/quick_math.cpython-38.pyc
+src/__pycache__/quick_math.cpython-311.pyc
+tests/__pycache__/__init__.cpython-38.pyc
+tests/__pycache__/__init__.cpython-311.pyc
+tests/__pycache__/test_math.cpython-38-pytest-7.4.3.pyc
+.gitignore
+
 

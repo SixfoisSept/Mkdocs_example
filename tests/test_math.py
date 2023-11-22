@@ -1,27 +1,33 @@
 import unittest
-from src import quick_math
+from src.quick_math import MathOperations
 
 class TestMathOperations(unittest.TestCase):
-
-    def test_add_numbers(self):
-        result = quick_math.add_numbers(2, 3)
+    def test_addition(self):
+        math_operations = MathOperations()
+        result = math_operations.add(2, 3)
         self.assertEqual(result, 5)
 
-    def test_subtract_numbers(self):
-        result = quick_math.subtract_numbers(5, 3)
-        self.assertEqual(result, 2)
-
-    def test_multiply_numbers(self):
-        result = quick_math.multiply_numbers(2, 3)
-        self.assertEqual(result, 6)
-
-    def test_divide_numbers(self):
-        result = quick_math.divide_numbers(6, 2)
+    def test_subtraction(self):
+        math_operations = MathOperations()
+        result = math_operations.subtract(5, 2)
         self.assertEqual(result, 3)
 
-    def test_divide_by_zero(self):
-        with self.assertRaises(ValueError):
-            quick_math.divide_numbers(5, 0)
+    def test_multiplication(self):
+        math_operations = MathOperations()
+        result = math_operations.multiply(4, 6)
+        self.assertEqual(result, 24)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_division(self):
+        math_operations = MathOperations()
+        result = math_operations.divide(8, 2)
+        self.assertEqual(result, 4)
+
+    def test_division_by_zero(self):
+        math_operations = MathOperations()
+        with self.assertRaises(ValueError) as context:
+            math_operations.divide(10, 0)
+
+        self.assertEqual(
+            str(context.exception),
+            "Cannot divide by zero."
+        )

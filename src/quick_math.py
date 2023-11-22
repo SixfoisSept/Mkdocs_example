@@ -1,71 +1,56 @@
-"""
-quick_math.py
+class MathOperations:
+    """Basic mathematical operations.
 
-This module contains functions for basic mathematical operations.
+    This class provides simple mathematical operations including addition, subtraction,
+    multiplication, and division.
 
-Functions:
-- add_numbers: Adds two numbers.
-- subtract_numbers: Subtracts the second number from the first.
-- multiply_numbers: Multiplies two numbers.
-- divide_numbers: Divides the first number by the second.
+    Methods:
 
-Usage:
-    import quick_math
+    - `add(a, b)`: Add two numbers.
 
-    result = quick_math.add_numbers(2, 3)
-    print(result)  # Output: 5
-"""
+    - `subtract(a, b)`: Subtract two numbers.
 
-def add_numbers(a, b):
+    - `multiply(a, b)`: Multiply two numbers.
+
+    - `divide(a, b)`: Divide two numbers. Raises a ValueError if attempting to divide
+      by zero.
+
+    Example:
+    ```python
+    math_ops = MathOperations()
+    result_add = math_ops.add(3, 4)  # Returns 7
+    result_subtract = math_ops.subtract(5, 2)  # Returns 3
+    result_multiply = math_ops.multiply(2, 6)  # Returns 12
+    result_divide = math_ops.divide(8, 2)  # Returns 4.0
+    ```
     """
-    Adds two numbers.
 
-    Parameters:
-    - a (int or float): The first number.
-    - b (int or float): The second number.
+    def add(self, a, b):
+        """Add two numbers."""
+        return a + b
 
-    Returns:
-    int or float: The sum of the two numbers.
-    """
-    return a + b
+    def subtract(self, a, b):
+        """Subtract two numbers."""
+        return a - b
 
-def subtract_numbers(a, b):
-    """
-    Subtracts the second number from the first.
+    def multiply(self, a, b):
+        """Multiply two numbers."""
+        return a * b
 
-    Parameters:
-    - a (int or float): The first number.
-    - b (int or float): The second number.
+    def divide(self, a, b):
+        """Divide two numbers.
 
-    Returns:
-    int or float: The result of subtracting the second number from the first.
-    """
-    return a - b
+        Args:
+            a (float or int): The numerator.
+            b (float or int): The denominator.
 
-def multiply_numbers(a, b):
-    """
-    Multiplies two numbers.
+        Returns:
+            float or int: The result of the division.
 
-    Parameters:
-    - a (int or float): The first number.
-    - b (int or float): The second number.
-
-    Returns:
-    int or float: The product of the two numbers.
-    """
-    return a * b
-
-def divide_numbers(a, b):
-    """
-    Divides the first number by the second.
-
-    Parameters:
-    - a (int or float): The numerator.
-    - b (int or float): The denominator (must not be zero).
-
-    Returns:
-    float: The result of dividing the first number by the second.
-    """
-    if b == 0:
-        raise ValueError("Division by zero is not allowed.")
-    return a / b
+        Raises:
+            ValueError: If attempting to divide by zero.
+        """
+        if b != 0:
+            return a / b
+        else:
+            raise ValueError("Cannot divide by zero.")

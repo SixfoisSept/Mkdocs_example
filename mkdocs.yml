@@ -20,9 +20,10 @@ plugins:
 # Setup the navbar
 nav:
 - Home: index.md
-- My package: api.md
-- Graphs & Tables: others.md
 - About Us: about.md
+- Graphs & Tables: others.md
+- API Reference: api.md
+
 
 exclude_docs: |
   .*
