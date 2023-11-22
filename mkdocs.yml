@@ -16,6 +16,7 @@ plugins:
         paths: [src] # mkdocs.yml in root, package in subfolder
         options: 
           docstring_style: sphinx
+
 # Setup the navbar
 nav:
 - Home: index.md
@@ -25,6 +26,8 @@ nav:
 
 exclude_docs: |
   .*
+
+# Setup the theme
 theme:
   name: 'material'
   logo: 'assets/sixfoissept_logo.png'
@@ -43,6 +46,7 @@ theme:
     - announce.dismiss
     - navigation.tabs
 
+# Add extensio
 markdown_extensions:
   tables:
   admonition:
