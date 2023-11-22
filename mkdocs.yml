@@ -10,6 +10,7 @@ copyright: SixFoisSept 2023
 
 plugins:
 - search
+- glightbox
 - mkdocstrings:
     handlers:
       python: # you can specify python version here
@@ -50,6 +51,8 @@ theme:
 # Add extensions
 markdown_extensions:
   tables:
+  attr_list:
+  md_in_html:
   admonition:
 #  pymdownx.details:
 #  pymdownx.extra:

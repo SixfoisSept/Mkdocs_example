@@ -1,8 +1,12 @@
 # Tables
-
 Voici l'exemple d'une table. 
 
-## Où vit-on le mieux en France? (:wink: l'Express)
+
+![Cadran Logo](assets/Cadran_logo.png){: style="height:80px" align=left }
+
+
+## Où vit-on le mieux en France? 
+:wink: Le Cadran pour l'Express
 
 | Ville         | Population (en millions) | Département           | Région                   |
 |---------------|--------------------------|-----------------------|--------------------------|
@@ -12,7 +16,8 @@ Voici l'exemple d'une table.
 | Bordeaux      | 0.25                     | Gironde (33)          | Nouvelle-Aquitaine       |
 | Lorient       | 0.21                     | Morbihan (56)         | Bretagne                 |
 
-
+!!! note
+    L'ordre des villes ne represente pas leur classement. 
 
 # Mermaid
 
@@ -118,3 +123,4 @@ Note over B,C: Pas d'appel direct au 6x7
 Note over A,B: Une autre note
 ```
 ````
+
