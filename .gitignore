@@ -6,3 +6,6 @@ mkdocs_env/
 *.egg-info
 .vscode
 settings.json
+.gitignore
+tests/__pycache__/test_math.cpython-311.pyc
+

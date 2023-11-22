@@ -1,5 +1,5 @@
 import unittest
-from src.my_package import quick_math
+from src import quick_math
 
 class TestMathOperations(unittest.TestCase):
 
