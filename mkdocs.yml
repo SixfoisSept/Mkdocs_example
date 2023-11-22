@@ -1,0 +1,22 @@
+# Project
+site_name: JeudiDejs de la Tech
+site_url: 
+repo_url: https://github.com/Lamatkhan/Mkdocs
+edit_uri: ""
+
+site_description: 
+site_author: Ayana Lamatkhanova
+copyright: SixFoisSept 2023
+
+plugins:
+- mkdocstrings:
+    handlers:
+      python: # you can specify python version here
+        paths: [src] # mkdocs.yml in root, package in subfolder
+# Setup the navbar
+nav:
+  - Home: index.md
+  - About: about.md
+exclude_docs: |
+  .*
+theme: readthedocs
