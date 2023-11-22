@@ -5,3 +5,4 @@ AyEnv/
 mkdocs_env/
 *.egg-info
 .vscode
+settings.json
