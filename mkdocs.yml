@@ -9,26 +9,15 @@ site_author: Ayana Lamatkhanova
 copyright: SixFoisSept 2023
 
 plugins:
-- search
-- glightbox
-- badges
-- mkdocstrings:
+- search # un plugin qui permet d'avoir une barre de recherché a
+- glightbox # un plugin d'une bibliothèque JavaScript permettant d'implémenter des galeries d'images légères (lightbox) dans une page web.
+- badges # un plugin pour insérer les badges dans la doc
+- mkdocstrings: # un plugin pour la génération de la documentation API à partir des docstrings
     handlers:
       python: # you can specify python version here
-        paths: [src] # mkdocs.yml in root, package in subfolder
+        paths: [src] # mkdocs.yml in root, package in subfolder ( spécifier la structure du projet)
         options: 
           docstring_style: sphinx
-
-# Setup the navbar
-nav:
-- Home: index.md
-- About Us: about.md
-- Graphs & Tables: others.md
-- API Reference: api.md
-
-
-exclude_docs: |
-  .*
 
 # Setup the theme
 theme:
@@ -51,9 +40,9 @@ theme:
 
 # Add extensions
 markdown_extensions:
-  tables:
-  attr_list:
-  md_in_html:
+  tables: # écriture des tables
+  attr_list: # The Attribute Lists extension adds a syntax to define attributes on the various HTML elements in markdown’s output.
+  md_in_html: # The Markdown in HTML extension allows for writing Markdown inside of HTML, which is useful for wrapping Markdown content with custom elements. 
   admonition:
 #  pymdownx.details:
 #  pymdownx.extra:
@@ -73,6 +62,17 @@ markdown_extensions:
     linenums: true
   pymdownx.superfences:
     custom_fences:
-    - name: mermaid
+    - name: mermaid # extension pour la création des diagrammes
       class: mermaid
       format: !!python/name:pymdownx.superfences.fence_code_format
+
+# Setup the navbar ( la structure de projet)
+nav:
+- Home: index.md
+- About Us: about.md
+- Graphs & Tables: others.md
+- API Reference: api.md
+
+# et on peut exclure certains markdowns de la doc
+exclude_docs: |
+  .*
