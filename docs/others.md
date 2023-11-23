@@ -1,4 +1,15 @@
+# Badges
+On peut ajouter des badges dans notre documentation, ils peuvent contenir les liens, donner les informations sur la couverture des tests ou d'autres information essentielles au bon fonctionnement de votre projet.
+
+
+|Programming language|Python| 
+|Required version|>=3.9|
+
+Plus d'info sur les badges : [mkdocs-badges](https://mkdocs-badges.six-two.dev/) 
+
+
 # Tables
+
 Voici l'exemple d'une table. 
 
 
