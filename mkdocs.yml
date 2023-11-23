@@ -11,6 +11,7 @@ copyright: SixFoisSept 2023
 plugins:
 - search
 - glightbox
+- badges
 - mkdocstrings:
     handlers:
       python: # you can specify python version here
